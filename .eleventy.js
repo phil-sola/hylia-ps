@@ -52,6 +52,7 @@ module.exports = function(config) {
       .slice(0, site.maxPostsPerPage);
   });
 
+
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
@@ -76,6 +77,6 @@ module.exports = function(config) {
       input: 'src',
       output: 'dist'
     },
-    passthroughFileCopy: true
   };
+
 };
